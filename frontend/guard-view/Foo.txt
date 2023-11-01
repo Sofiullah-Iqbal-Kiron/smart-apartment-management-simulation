@@ -1,0 +1,1 @@
+multi page issue: https://vitejs.dev/guide/build.html#multi-page-app

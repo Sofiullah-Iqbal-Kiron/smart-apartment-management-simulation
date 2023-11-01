@@ -1,0 +1,12 @@
+{% extends 'rootapp/base.html' %}
+{% load humanize %}
+{% load static %}
+
+{% block content %}
+    <h1 class="text-5xl bg-slate-50 text-center pt-3 pb-7 px-1 text-slate-700 font-extrabold hover:bg-slate-100 mb-16">
+        Rendering Django Template.
+    </h1>
+    <p class="mt-7 text-center text-2xl">
+        Server side rendering. Hello world. {{ 98374059823|intcomma }} tk.
+    </p>
+{% endblock content %}

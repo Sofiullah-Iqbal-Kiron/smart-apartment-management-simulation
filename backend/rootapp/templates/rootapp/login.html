@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="{% static 'rootapp/login/vite.svg' %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login</title>
+    {#    <script type="module" crossorigin src="{% static 'rootapp/login/JS.js' %}"></script>#}
+    <link rel="stylesheet" href="{% static 'rootapp/login/CSS.css' %}">
+</head>
+<body>
+<div id="root">
+    <div style="background-image: url('{% static 'rootapp/login/bg.jpg' %}')"
+         class="bg-cover h-screen flex flex-col justify-center items-center space-y-3">
+        <div class="px-5 sm:px-10 py-10 sm:py-20 bg-white/10 backdrop-blur-md rounded-3xl border-2 border-black/10">
+            <form method="POST" action="{% url 'rootapp:login' %}"
+                  class="flex flex-col justify-center items-center space-y-4">
+                <legend class="text-center sm:mb-4 text-white text-2xl font-bold tracking-wide font-serif">
+                    Dear User<br/>Please Login First
+                </legend>
+
+                {% csrf_token %}
+
+                <div class="input-div">
+                    <label for='username'>
+                        <img src="{% static 'rootapp/login/aticon.svg' %}" alt="aticon" width="20" height="20"
+                             class="invisible sm:visible"/>
+                    </label>
+                    <input type='text' required id='username' name='username' placeholder='username' class="input-field"/>
+                </div>
+
+                <div class="input-div">
+                    <label for='human-id'>
+                        <img src="{% static 'rootapp/login/usericon.svg' %}" alt="usericon" width="20" height="20"
+                             class="invisible sm:visible"/>
+                    </label>
+                    <input type='text' id='human-id' name='human-id' placeholder='human id' class="input-field"/>
+                </div>
+
+                <div class="input-div">
+                    <label for='passo'>
+                        <img src="{% static 'rootapp/login/lockicon.svg' %}" alt="lockicon" width="20" height="20"
+                             class="invisible sm:visible"/>
+                    </label>
+                    <input type='password' required id='passo' name='passo' placeholder='password' class="input-field"/>
+                </div>
+
+                <div class="h-[0.5rem]"></div>
+                <button type="submit" class="btn-primary w-full">Login</button>
+
+                <p class="text-sm text-gray-400">Not registered yet? then <a href="#register" class="text-yellow-300">register</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

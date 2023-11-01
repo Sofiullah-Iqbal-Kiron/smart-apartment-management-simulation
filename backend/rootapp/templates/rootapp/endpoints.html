@@ -1,0 +1,16 @@
+{# urls #}
+
+{% extends 'rootapp/base.html' %}
+
+{% block title %}
+    Endpoints list
+{% endblock title %}
+
+{% block content %}
+    <div>
+        <h1 class="text-center text-4xl font-serif p-10">All Endpoints</h1>
+        <ol class="list-decimal list-outside ps-10 hover:text-blue-600 transition-all duration-200">
+            <li><a href="{{ urls }}">Issues</a></li>
+        </ol>
+    </div>
+{% endblock content %}

@@ -1,0 +1,6 @@
+[+] Owner can: CRUD Guard, CRUD Resident, CRUD Block, Manage Block, Read/Delete/Handle Issue.
+
+Future features:
+ - send notifications to guards/residents in real time
+ - real time audio/video/text chat system
+ - post something that are visible to all other resident/guard or specifically guard or resident

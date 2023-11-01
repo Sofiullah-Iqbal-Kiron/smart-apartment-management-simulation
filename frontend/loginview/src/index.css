@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-div {
+        @apply flex flex-col items-center sm:flex-row space-y-1 sm:space-y-0 sm:space-x-2 text-gray-950 font-mono font-extrabold text-lg;
+    }
+
+    .input-field {
+        @apply px-2 py-1.5 bg-transparent border-b-white border-b-2 font-thin text-white focus:outline-0 focus:border-b-blue-400 transition-all duration-200 placeholder-gray-400;
+    }
+
+    .btn-primary {
+        @apply bg-blue-700 px-3 py-1 text-white tracking-wide font-thin rounded-xl hover:bg-blue-800 transition-all duration-200;
+    }
+
+    #form-holder {
+        @apply px-5 sm:px-10 py-10 sm:py-20 bg-white/10 backdrop-blur-md rounded-3xl border-2 border-black/10;
+    }
+
+    #the-form {
+        @apply flex flex-col justify-center items-center space-y-4;
+    }
+
+    #the-legend {
+        @apply text-center sm:mb-4 text-white text-2xl font-bold tracking-wide font-serif;
+    }
+}

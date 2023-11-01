@@ -1,0 +1,17 @@
+presentation.lnk
+
+backend/.idea
+backend/.vscode
+backend/__pycache__
+backend/*/__pycache__
+backend/*/*/__pycache__
+
+frontend/*/.idea
+frontend/*/.vscode
+frontend/*/dist
+frontend/*/node_modules
+
+system design & models/Usecase diagram/.idea
+system design & models/Usecase diagram/__pycache__
+system design & models/Usecase diagram/media
+system design & models/Manim implementation.lnk

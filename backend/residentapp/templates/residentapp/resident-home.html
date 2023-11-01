@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident View</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration-line: underline;
+            transition: all;
+            transition-duration: 150ms;
+        }
+
+        #page-heading {
+            background-color: aliceblue;
+            padding: 1rem;
+            border-radius: 5rem;
+            margin-inline: 1.25rem;
+        }
+
+        #api-endpoints {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: start;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="page-heading">Welcome to Resident App.</h1>
+    <h3 style="text-align: left; font-weight: 200;">Available API endpoints for resident.</h3>
+    <ul id="api-endpoints">
+        <li><a href="">resident/profile/me/</a></li>
+        <li><a href="">resident/profile/:resident_id/</a></li>
+        <li><a href="">resident/issues/all/</a></li>
+        <li><a href="">resident/issue/create/</a></li>
+        <li><a href="">resident/issue/delete/:issue_id/</a></li>
+    </ul>
+</body>
+
+</html>

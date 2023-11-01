@@ -1,0 +1,7 @@
+h1 {
+    @apply text-5xl;
+}
+
+input {
+    @apply bg-slate-800;
+}

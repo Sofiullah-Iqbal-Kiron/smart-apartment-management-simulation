@@ -1,0 +1,20 @@
++ think about billing system, it might be a transaction
++ build a real time search filter
++ provide csrf token from backend and then build form at frontend at this id-div
++ serving static files
++ update rootapp.utils.is_unique_token
++ extend/customize UserPassesTest mixin
++ filter Guard admin, human selection list would be only male: done
+https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#modeladmin-objects
+https://stackoverflow.com/questions/17948018/add-custom-form-fields-that-are-not-part-of-the-model-django
+
++ Study totally: https://kinsta.com/blog/http-302/
++ Axios get confused with status codes returned from backend.
++ 302 means redirect but when axios doesn't get any redirect url, it throws AxiosError.
+
++ Customize knox authentication.
++ How to handle Billing system. Django GetPaid or Django Payments.
++ Check token validity, provide unique token with timedelta expiry: done.
++ Register Guest.
++ Token validator. Token nag set max 50 by validator. + setted on serializer.
++ Resident/Guard post on profile/me to edit his profile data.

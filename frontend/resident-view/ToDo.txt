@@ -1,0 +1,3 @@
+[+] add outline icons at utilities action button
+[+] complete resident profile page
+[+] payment gateway

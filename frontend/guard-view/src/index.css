@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .front-link {
+        @apply text-xl;
+    }
+
+    .hero-1 {
+        @apply px-3 py-4 text-gray-800 bg-slate-100 flex justify-between items-center;
+    }
+
+    .header-1 {
+        @apply font-extrabold bg-blue-300;
+    }
+
+    .ghost {
+        @apply py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold text-blue-500 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm;
+    }
+
+    .text-input {
+        @apply w-full border text-lg rounded-md border-blue-400 shadow-sm px-3 py-2 bg-gray-50
+        focus:border-indigo-900;
+    }
+
+    #base-data-table tr {
+        @apply h-[2rem];
+    }
+
+    #base-data-table tr > td:nth-child(1) {
+        @apply text-right pe-3 font-bold sm:font-medium;
+    }
+
+    #base-data-table tr > td:nth-child(2) {
+        @apply text-left font-normal;
+    }
+
+    #records-table th {
+        @apply w-[15rem] text-lg py-3 border-y-2 border-blue-500 hover:bg-none;
+    }
+
+    #records-table tbody tr {
+        @apply text-center h-[2.5rem] hover:bg-slate-200 transition-colors duration-200;
+    }
+}

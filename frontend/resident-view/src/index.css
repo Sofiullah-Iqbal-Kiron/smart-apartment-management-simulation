@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #avatar-portion {
+    @apply flex flex-col justify-center items-center space-y-2;
+  }
+
+  .input-text {
+    @apply w-full rounded-md text-gray-800 font-serif border-none outline-none ring-2 ring-black/50 hover:ring-black focus:ring-2 focus:ring-blue-500 transition-all duration-150;
+  }
+
+  .header-1 {
+    @apply font-serif text-3xl p-5;
+  }
+
+  .btn-submit {
+    @apply px-3 py-2 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors duration-150;
+  }
+
+  .btn-secondary {
+    @apply w-[70%] py-2 rounded bg-violet-700 text-white hover:scale-105 transition-all duration-100;
+  }
+
+  .btn-ghost {
+    @apply py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold text-blue-500 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all bg-sky-100;
+  }
+
+  .action-card {
+    @apply flex flex-col justify-center items-center rounded-none bg-gradient-to-r from-cyan-600 to-blue-600 h-[9rem] w-full p-2 shadow-xl hover:rounded-2xl transition-all duration-150;
+  }
+
+  .action-card > h3 {
+    @apply text-white text-2xl;
+  }
+
+  .action-card > p {
+    @apply text-gray-200 text-lg;
+  }
+
+  .table-wrapper-immediate {
+    @apply border rounded-none overflow-hidden border-black;
+  }
+
+  table {
+    @apply min-w-full divide-y divide-gray-800;
+  }
+
+  th,
+  td {
+    @apply px-3 text-black text-xs;
+  }
+
+  th {
+    @apply py-3 text-left font-medium uppercase;
+  }
+
+  td {
+    @apply py-2 whitespace-nowrap font-light;
+  }
+}
