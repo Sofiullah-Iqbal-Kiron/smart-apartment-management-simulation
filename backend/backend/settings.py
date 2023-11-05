@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'login_history',
     # 'django-browser-reload',
 
-    'semantic_admin',
+    # 'semantic_admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

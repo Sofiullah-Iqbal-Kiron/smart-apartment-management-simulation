@@ -63,7 +63,6 @@ class TempTokenSerializer(serializers.ModelSerializer):
         read_only_fields = ['used']
 
     def create(self, validated_data):
-        print(validated_data)
         token_key = generate_a_temp_token()
         nag = validated_data.get('nag', 1)
         fond_by = validated_data['fond_by']

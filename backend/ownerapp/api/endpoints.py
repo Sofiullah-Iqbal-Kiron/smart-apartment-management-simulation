@@ -1,4 +1,5 @@
 from django.urls import path
+from .views import ListIssues
 
 # owner/
 #       residents/all/
@@ -8,4 +9,5 @@ from django.urls import path
 #       resident/delete/:resident_id/
 
 endpoints = [
+    path('issues/all/', ListIssues.as_view(), name='list-issues'),
 ]

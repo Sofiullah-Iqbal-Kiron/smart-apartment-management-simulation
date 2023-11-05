@@ -9,12 +9,14 @@ import LoadingIndicator from "../components/LoadingIndicator";
 export default function ManageIssuesPage() {
   const { data, isError, isLoading } = useIssues();
 
-  if (isError) return <FetchingError text="Issues fetching error." />;
   if (isLoading) return <LoadingIndicator />;
+  if (isError) return <FetchingError text="Issues fetching error." />;
 
   return (
     <div style={{ minHeight: "100svh" }} className="w-full">
-      ManageIssuesPage
+      <ul>
+        {data.map((issue, idx)=><li key={idx}>{issue.title}</li>)}
+      </ul>
     </div>
   );
 }

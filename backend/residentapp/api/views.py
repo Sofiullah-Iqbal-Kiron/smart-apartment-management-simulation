@@ -181,19 +181,13 @@ class DeleteIssue(APIView):
 class GetToken(APIView):
     """
     Get a temporary token to be used in registration process of your guests.
+    Provide "number_of_allowed_guests" : int
     """
     permission_classes = [IsAuthenticated, IsResident]
-
-    def get(self, request):
-        content = {
-            'absolute_url_of_login': reverse('rootapp:login', request=request)
-        }
-        return Response(content, status=status.HTTP_200_OK)
 
     def post(self, request):
         data = request.data
         serializer = TempTokenSerializer(data=data)
         serializer.is_valid(raise_exception=True)
-        print(serializer.validated_data)
         serializer.save(fond_by=Resident.objects.get(human__user=request.user))
         return Response(serializer.data, status=status.HTTP_200_OK)

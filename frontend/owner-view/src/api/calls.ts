@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { endpoints } from "./endpoints";
 
-const fetchIssuesConfig = {}
+const fetchIssuesConfig = { auth: { username: "main_admin", password: "development" } }
 const fetchIssues = () => axios.get(endpoints.issues, fetchIssuesConfig).then((res) => res.data).catch((err) => console.log(err))
 export const useIssues = () => useQuery({ queryKey: ["issues"], queryFn: fetchIssues })
 

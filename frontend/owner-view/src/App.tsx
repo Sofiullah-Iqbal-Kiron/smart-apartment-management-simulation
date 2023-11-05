@@ -5,11 +5,11 @@ import { useTheme } from "./store";
 
 export default function App() {
   const currTheme = useTheme((state) => state.theme);
-  
+
   return (
     <div data-theme={`${currTheme}`}>
       <Topnav />
-      <IndexPage />
+      <ManageIssuesPage />
     </div>
   );
 }
